@@ -1,13 +1,18 @@
 import bwipjs from 'bwip-js';
 
 export default async function handler(req, res) {
-  const { text = '123456789012', scale = 3, height = 10 } = req.query;
+  const { text, scale } = req.query;
+
+  if (!text || !scale) {
+    return res.status(400).json({ error: 'Missing required parameters: text and scale' });
+  }
 
   try {
     const png = await bwipjs.toBuffer({
+      bcid: 'code128',
       text,
       scale: parseInt(scale),
-      height: parseInt(height),
+      height: 10,
       includetext: true,
       textxalign: 'center',
     });
