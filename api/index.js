@@ -13,10 +13,7 @@ export default async function handler(req, res) {
       text,
       scale: parseInt(scale),
       height: 10,
-      includetext: true,
-      textxalign: 'center',
-      textfont: 'Inconsolata',
-      textsize: 13
+      includetext: false
     });
 
     res.setHeader('Content-Type', 'image/png');
