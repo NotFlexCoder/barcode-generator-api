@@ -15,6 +15,8 @@ export default async function handler(req, res) {
       height: 10,
       includetext: true,
       textxalign: 'center',
+      textfont: 'Inconsolata',
+      textsize: 13
     });
 
     res.setHeader('Content-Type', 'image/png');
