@@ -1,11 +1,10 @@
 import bwipjs from 'bwip-js';
 
 export default async function handler(req, res) {
-  const { text = '123456789012', bcid = 'code128', scale = 3, height = 10 } = req.query;
+  const { text = '123456789012', scale = 3, height = 10 } = req.query;
 
   try {
     const png = await bwipjs.toBuffer({
-      bcid,
       text,
       scale: parseInt(scale),
       height: parseInt(height),
