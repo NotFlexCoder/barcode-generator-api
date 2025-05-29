@@ -1,0 +1,11 @@
+{
+  "name": "barcode-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "bwip-js": "^2.0.10"
+  }
+}
