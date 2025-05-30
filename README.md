@@ -96,4 +96,4 @@ http://localhost:3000/api/barcode?text=EXAMPLE&scale=3
   
 ## 📝 License
 
-This project is licensed under the MIT License – see the [LICENSE](https://github.com/NotFlexCoder/NotFlexCoder/blob/main/LICENSE) file for details.
+This project is licensed under the License – see the [LICENSE](https://github.com/NotFlexCoder/NotFlexCoder/blob/main/LICENSE) file for details.
